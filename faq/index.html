@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MinimalEditor · Preguntas frecuentes</title>
+<meta name="description" content="Preguntas frecuentes de MinimalEditor: la app se ve cortada en pantallas pequeñas, no abre, falla la exportación, la vista previa va lenta o la IA no responde.">
+<link rel="icon" href="../img/icono.png">
+<link rel="stylesheet" href="../estilos.css">
+</head>
+<body class="neon">
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../">
+      <svg viewBox="0 -1.5 14 14" aria-hidden="true"><path d="M-6,4.5a.5.5,0,0,0-.038-.191.506.506,0,0,0-.271-.271.505.505,0,0,0-.382,0,.518.518,0,0,0-.163.109L-9,6.293V5.5A2.5,2.5,0,0,0-11.5,3h-6A2.5,2.5,0,0,0-20,5.5v6A2.5,2.5,0,0,0-17.5,14h6A2.5,2.5,0,0,0-9,11.5v-.793l2.146,2.146a.518.518,0,0,0,.163.109A.5.5,0,0,0-6.5,13a.5.5,0,0,0,.191-.038.506.506,0,0,0,.271-.271A.5.5,0,0,0-6,12.5Zm-4,7A1.5,1.5,0,0,1-11.5,13h-6A1.5,1.5,0,0,1-19,11.5v-6A1.5,1.5,0,0,1-17.5,4h6A1.5,1.5,0,0,1-10,5.5Zm1-3.793,2-2v5.586l-2-2Z" transform="translate(20 -3)"/></svg>
+      MinimalEditor
+    </a>
+    <nav>
+      <a href="../#novedades" class="hide-sm">Novedades</a>
+      <a href="../#precio" class="hide-sm">Precio</a>
+      <a href="./">FAQ</a>
+      <a href="../privacidad/" class="hide-sm">Privacidad</a>
+      <a class="nav-buy" href="https://apps.microsoft.com/detail/9P6VSP68VXM4?hl=es-mx&amp;gl=MX">Descargar</a>
+    </nav>
+  </div>
+</header>
+
+<main class="doc wrap faq">
+  <span class="kicker">Ayuda</span>
+  <h1>Preguntas frecuentes</h1>
+  <p class="updated">Última actualización: 20 de noviembre de 2026</p>
+  <p>Aquí están los problemas más comunes y cómo resolverlos. Muchos dependen de la configuración de Windows, de la tarjeta gráfica o de otros programas del equipo, y se arreglan en un minuto.</p>
+
+  <h2 id="pantalla">Pantalla y ventana</h2>
+
+  <details class="qa" open>
+    <summary>La app se ve cortada y no aparece la línea de tiempo. ¿Cómo la veo completa?</summary>
+    <p>En pantallas pequeñas, o cuando Windows tiene la escala por encima de 100 %, a MinimalEditor le quedaba muy poco espacio: la línea de tiempo y el panel de propiedades quedaban fuera de la ventana y no se podía seleccionar ni editar nada. <strong>Lo corregimos en la actualización 0.2.1</strong>, que acomoda todo en cualquier tamaño de pantalla.</p>
+    <p>Mientras llega la actualización, puedes verla completa así:</p>
+    <ol>
+      <li>En Windows abre <strong>Configuración &gt; Sistema &gt; Pantalla</strong>.</li>
+      <li>En <strong>Escala</strong>, elige <strong>100 %</strong>.</li>
+      <li>Vuelve a MinimalEditor y maximiza la ventana con doble clic en su barra de título.</li>
+    </ol>
+    <p>Cuando tengas la 0.2.1 puedes regresar la escala al valor que tenías.</p>
+  </details>
+
+  <details class="qa">
+    <summary>Agregué un texto o un clip pero no puedo moverlo ni editarlo.</summary>
+    <p>Los clips y los textos se seleccionan en la <strong>línea de tiempo</strong> (la parte de abajo). Al hacer clic sobre uno, el panel de la derecha muestra sus propiedades: ahí cambias el texto, la posición, el tamaño y los efectos. Para moverlo en el tiempo, arrástralo en la línea de tiempo; para alargarlo o acortarlo, arrastra sus bordes.</p>
+    <p>Si no ves la línea de tiempo o el panel de la derecha, revisa la pregunta anterior.</p>
+  </details>
+
+  <h2 id="abrir">Al abrir la app</h2>
+
+  <details class="qa">
+    <summary>La app no abre o dice que falta VCRUNTIME140.dll o MSVCP140.dll.</summary>
+    <p>Esos archivos son parte de un componente oficial de Microsoft (Visual C++ Redistributable). Desde la versión 0.2.0, MinimalEditor ya lo trae incluido. Si tienes una versión anterior, actualiza desde Microsoft Store o instala el componente desde <a href="https://aka.ms/vs/17/release/vc_redist.x64.exe">aka.ms/vs/17/release/vc_redist.x64.exe</a> y vuelve a abrir la app.</p>
+  </details>
+
+  <details class="qa">
+    <summary>Aparece un aviso de que falta WebView2.</summary>
+    <p>MinimalEditor usa Microsoft Edge WebView2, el mismo componente que usan muchas apps de Windows para su interfaz. Windows 11 ya lo trae; en algunos equipos con Windows 10 puede faltar. Instálalo gratis desde <a href="https://go.microsoft.com/fwlink/p/?LinkId=2124703">la página oficial de Microsoft</a> y vuelve a abrir MinimalEditor.</p>
+  </details>
+
+  <details class="qa">
+    <summary>Sigue sin abrir después de eso.</summary>
+    <ol>
+      <li>Instala las actualizaciones pendientes de Windows y reinicia.</li>
+      <li>Abre Microsoft Store, ve a <strong>Biblioteca</strong> y actualiza MinimalEditor.</li>
+      <li>Si continúa, desinstálalo desde <strong>Configuración &gt; Aplicaciones</strong> y vuelve a instalarlo desde Microsoft Store. Tu compra se conserva.</li>
+    </ol>
+    <p>Si nada funciona, escríbenos y te ayudamos personalmente.</p>
+  </details>
+
+  <h2 id="exportar">Exportar</h2>
+
+  <details class="qa">
+    <summary>¿Dónde quedó mi video exportado?</summary>
+    <p>Donde elegiste al pulsar «Exportar…». Desde la versión 0.2.0, al terminar se abre esa carpeta con el video ya seleccionado. También puedes usar el botón «Abrir carpeta» en la ventana de exportación.</p>
+  </details>
+
+  <details class="qa">
+    <summary>La exportación falla cuando activo la aceleración por hardware.</summary>
+    <p>La aceleración usa la tarjeta gráfica y con algunos controladores no funciona. Si falla, MinimalEditor repite la exportación con el codificador normal automáticamente. Si quieres evitar ese intento, desactiva la casilla <strong>Aceleración por hardware</strong>. Actualizar el controlador de tu tarjeta gráfica también suele resolverlo.</p>
+  </details>
+
+  <details class="qa">
+    <summary>Dice que Windows no tiene memoria suficiente para codificar el video.</summary>
+    <p>El equipo se quedó sin memoria libre en ese momento. Cierra otras aplicaciones pesadas (navegadores con muchas pestañas, juegos, otros editores) e inténtalo de nuevo. También puedes exportar a una resolución menor o en formato WebM, que usa otro codificador.</p>
+  </details>
+
+  <details class="qa">
+    <summary>¿Exportar a 4K mejora la calidad de mi video?</summary>
+    <p>No. Si tu video original es más pequeño, por ejemplo 2.7K o 1080p, exportarlo a 4K solo agranda la imagen: no agrega detalle y tarda más. Lo mejor es exportar en la resolución original. Desde la versión 0.2.1 aparece en la lista como «original» y viene elegida por defecto.</p>
+  </details>
+
+  <h2 id="rendimiento">Vista previa y rendimiento</h2>
+
+  <details class="qa">
+    <summary>La vista previa va lenta o se traba.</summary>
+    <ul>
+      <li>Al importar un video, MinimalEditor prepara en segundo plano una copia ligera para la vista previa. Mientras se prepara (al pasar el cursor sobre la marca del video en Medios dice «Preparando preview rápido…»), la reproducción puede ir lenta; espera a que termine.</li>
+      <li>En el selector de calidad de la vista previa elige <strong>Rápida</strong>. Esto no afecta la calidad del video exportado.</li>
+      <li>Cierra programas pesados y, en laptops, conecta el cargador: con batería Windows reduce la velocidad del equipo.</li>
+    </ul>
+  </details>
+
+  <details class="qa">
+    <summary>Un video o archivo no se importa.</summary>
+    <ul>
+      <li>Si el archivo está en OneDrive o en otra nube, puede que solo exista en internet. Haz clic derecho sobre él y elige <strong>Mantener siempre en este dispositivo</strong>, o cópialo a tu equipo.</li>
+      <li>Si está en una memoria USB, cópialo primero a tu computadora.</li>
+      <li>Prueba abrirlo en el reproductor de Windows. Si tampoco se reproduce, el archivo puede estar dañado. Si se reproduce y MinimalEditor no lo importa, escríbenos indicando de qué cámara o programa viene.</li>
+    </ul>
+  </details>
+
+  <details class="qa">
+    <summary>No se escucha el audio en la vista previa.</summary>
+    <ul>
+      <li>Revisa que la pista no esté silenciada: el ícono de bocina junto al nombre de la pista en la línea de tiempo.</li>
+      <li>Revisa el dispositivo de salida de Windows (audífonos o bocinas) en el ícono de volumen de la barra de tareas.</li>
+      <li>Un clip con <strong>Reversa</strong> se reproduce sin sonido a propósito: el audio al revés no se entiende.</li>
+    </ul>
+  </details>
+
+  <h2 id="ia">Editar con IA</h2>
+
+  <details class="qa">
+    <summary>Dice «¿Está abierto Ollama?».</summary>
+    <p>La IA local funciona con Ollama, un programa gratuito que corre en tu computadora. Ese mensaje aparece cuando MinimalEditor no lo encuentra abierto:</p>
+    <ol>
+      <li>Descarga e instala Ollama desde <a href="https://ollama.com">ollama.com</a>.</li>
+      <li>Ábrelo y descarga un modelo.</li>
+      <li>En MinimalEditor abre <strong>Editar con IA &gt; Configurar</strong> y elige ese modelo.</li>
+    </ol>
+    <p>Si prefieres no instalar nada, puedes usar tu propia API key de un proveedor en la nube.</p>
+  </details>
+
+  <details class="qa">
+    <summary>La IA tarda mucho en responder.</summary>
+    <p>Con la IA local, la velocidad depende de tu tarjeta gráfica y de tu memoria. Un modelo más pequeño responde más rápido. Si tu equipo es modesto, usar tu API key en la nube suele ser mucho más ágil.</p>
+  </details>
+
+  <details class="qa">
+    <summary>La IA puso un dato equivocado.</summary>
+    <p>La IA puede equivocarse. Antes de aplicar, MinimalEditor te muestra el plan escena por escena para que revises y corrijas cualquier texto o fecha. Si ya lo aplicaste, deshazlo con <strong>Ctrl+Z</strong> o corrige el texto en la línea de tiempo.</p>
+  </details>
+
+  <h2 id="contacto">¿No encontraste tu respuesta?</h2>
+  <p>Escríbenos a <a href="mailto:soporte.jacsoftware@outlook.com?subject=Soporte%20MinimalEditor">soporte.jacsoftware@outlook.com</a>. Si puedes, incluye una captura de pantalla y dinos qué versión de Windows usas. Respondemos personalmente.</p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="grow">© 2026 MinimalEditor</span>
+    <a href="../">Inicio</a>
+    <a href="../privacidad/">Privacidad</a>
+    <a href="mailto:soporte.jacsoftware@outlook.com?subject=Soporte%20MinimalEditor">Soporte directo: soporte.jacsoftware@outlook.com</a>
+  </div>
+</footer>
+</body>
+</html>

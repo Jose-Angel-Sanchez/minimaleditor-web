@@ -725,3 +725,88 @@ footer .grow {
     transition: none;
   }
 }
+
+.notice {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  align-items: baseline;
+  margin-top: 36px;
+  padding: 14px 18px;
+  border: 1px solid #ffd23f;
+  background: rgba(255, 210, 63, 0.08);
+  box-shadow: 0 0 22px rgba(255, 210, 63, 0.15);
+  font-size: 15px;
+}
+
+.notice strong {
+  color: #ffd23f;
+  font: 700 12px/1.6 ui-monospace, "Cascadia Mono", Consolas, monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+}
+
+.notice span {
+  flex: 1 1 320px;
+  color: var(--text-2);
+}
+
+.notice a {
+  color: #ffd23f;
+}
+
+.faq h2 {
+  scroll-margin-top: 80px;
+}
+
+.qa {
+  border: 1px solid var(--border);
+  background: rgba(10, 10, 10, 0.85);
+  margin: 10px 0;
+}
+
+.qa[open] {
+  border-color: rgba(45, 226, 255, 0.5);
+  box-shadow: 0 0 20px rgba(45, 226, 255, 0.12);
+}
+
+.qa summary {
+  cursor: pointer;
+  padding: 14px 18px;
+  font-weight: 600;
+  color: var(--text);
+  list-style: none;
+}
+
+.qa summary::-webkit-details-marker {
+  display: none;
+}
+
+.qa summary::before {
+  content: "+";
+  display: inline-block;
+  width: 18px;
+  color: #39ff88;
+  font-weight: 700;
+}
+
+.qa[open] summary::before {
+  content: "-";
+}
+
+.qa > p,
+.qa > ol,
+.qa > ul {
+  padding: 0 18px 0 36px;
+  margin: 0 0 12px;
+}
+
+.qa > ol,
+.qa > ul {
+  padding-left: 54px;
+}
+
+.qa a,
+.faq > p a {
+  color: #2de2ff;
+}
