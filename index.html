@@ -1,17 +1,17 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MinimalEditor · Editor de vídeo</title>
-<meta name="description" content="MinimalEditor: editor de video para Windows. Licencia de por vida por $149 MXN, sin marca de agua, sin suscripciones y nadie te espía. Todo se queda en tu computadora.">
-<meta property="og:title" content="MinimalEditor · Edita vídeo sin distracciones">
-<meta property="og:description" content="Licencia de por vida por $149 MXN. Sin marca de agua. Nadie te espía.">
-<meta property="og:image" content="img/portada.png">
+<title>MinimalEditor · Editor de video con IA</title>
+<meta name="description" content="MinimalEditor: editor de video para Windows. Escribe el tema y la IA arma el video con guion, narración, música, subtítulos y animaciones. Licencia de por vida por $149 MXN, sin marca de agua y nadie te espía.">
+<meta property="og:title" content="MinimalEditor · Escribe el tema. La IA arma el video.">
+<meta property="og:description" content="Licencia de por vida por $149 MXN. Sin marca de agua. IA local con Ollama o con tu propia API key.">
+<meta property="og:image" content="video/trailer-v2-poster.jpg">
 <link rel="icon" href="img/icono.png">
 <link rel="stylesheet" href="estilos.css">
 </head>
-<body>
+<body class="neon">
 <header class="top">
   <div class="wrap">
     <a class="brand" href="./">
@@ -19,35 +19,133 @@
       MinimalEditor
     </a>
     <nav>
+      <a href="#novedades" class="hide-sm">Novedades</a>
+      <a href="#agents" class="hide-sm">Agents</a>
       <a href="#funciones" class="hide-sm">Funciones</a>
       <a href="#precio" class="hide-sm">Precio</a>
       <a href="privacidad/">Privacidad</a>
-      <a href="https://apps.microsoft.com/detail/9P6VSP68VXM4?hl=es-mx&amp;gl=MX">Descargar</a>
+      <a class="nav-buy" href="https://apps.microsoft.com/detail/9P6VSP68VXM4?hl=es-mx&amp;gl=MX">Descargar</a>
     </nav>
   </div>
 </header>
 
 <main>
-  <div class="wrap hero">
-    <h1>Edita video<br>sin distracciones.</h1>
-    <p class="lead">El editor de video para Windows que pagas una sola vez: $149 MXN y es tuyo para siempre. Sin marca de agua, sin mensualidades y nadie revisa lo que haces.</p>
+  <div class="wrap hero hero-v2">
+    <span class="badge">Nueva versión</span>
+    <h1><span class="glow-text">Escribe el tema.</span><br>La IA arma el video.</h1>
+    <p class="lead">Guion, narración con voz, música original, subtítulos y animaciones en minutos. Tú revisas y decides qué se queda. Y lo pagas una sola vez: $149 MXN y es tuyo para siempre.</p>
     <div class="cta">
-      <a class="btn primary" href="https://apps.microsoft.com/detail/9P6VSP68VXM4?hl=es-mx&amp;gl=MX">
+      <a class="btn primary neon-btn" href="https://apps.microsoft.com/detail/9P6VSP68VXM4?hl=es-mx&amp;gl=MX">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5 10.4 4.5v7H3zm0 13 7.4 1v-7H3zm8.3 1.1L21 21v-8.5h-9.7zm0-15.2v7.1H21V3z"/></svg>
         Descargar en Microsoft Store
       </a>
-      <a class="btn" href="#funciones">Ver funciones</a>
+      <a class="btn" href="#agents">Conoce a los agents</a>
     </div>
     <ul class="promise">
       <li>Licencia de por vida</li>
       <li>Sin marca de agua</li>
       <li>Nadie te espía</li>
+      <li>IA local o con tu API key</li>
     </ul>
-    <img class="shot" src="img/02-editor.png" width="1920" height="1080" alt="Editor de MinimalEditor con la biblioteca de medios, la vista previa y un timeline con tres clips y un título">
+    <figure class="trailer">
+      <video controls playsinline preload="metadata" poster="video/trailer-v2-poster.jpg" width="1280" height="720">
+        <source src="video/trailer-v2.mp4" type="video/mp4">
+        <a href="video/trailer-v2.mp4">Ver el tráiler</a>
+      </video>
+      <figcaption>Tráiler de la nueva versión. El video del ejemplo lo armó la IA local con Ollama dentro de MinimalEditor.</figcaption>
+    </figure>
   </div>
+
+  <section id="novedades" class="steps-section">
+    <div class="wrap">
+      <span class="kicker">Nuevo en esta versión</span>
+      <h2>De una idea a un video terminado, en cuatro pasos.</h2>
+      <p class="sub">Le dices de qué quieres el video y MinimalEditor hace el trabajo pesado frente a ti. Nada pasa sin que lo veas.</p>
+      <ol class="steps">
+        <li class="step c-green"><b>01</b><strong>Escribe el tema</strong><span>«Haz un video de 1 minuto sobre la historia de Microsoft». Así de simple.</span></li>
+        <li class="step c-cyan"><b>02</b><strong>La IA escribe el guion</strong><span>Escenas, títulos, datos, narración y estilo visual, listos para revisar.</span></li>
+        <li class="step c-yellow"><b>03</b><strong>Tú revisas y corriges</strong><span>Cambia cualquier texto o dato antes de aplicar. La IA puede equivocarse; tú tienes la última palabra.</span></li>
+        <li class="step c-pink"><b>04</b><strong>Los agents arman tu video</strong><span>Clips animados, voz, música y subtítulos aparecen en tu timeline mientras lo ves.</span></li>
+      </ol>
+      <div class="duo">
+        <figure><img class="shot glow-frame" src="img/v2-plan-ia.jpg" width="1600" height="900" alt="Ventana Editar con IA con el plan de seis escenas sobre la historia de Microsoft, listo para revisar" loading="lazy"><figcaption>El plan de la IA, escena por escena, antes de aplicarlo.</figcaption></figure>
+        <figure><img class="shot glow-frame" src="img/v2-recursos-agents.jpg" width="1600" height="900" alt="Panel de recursos que creará la IA y los agents trabajando en el timeline" loading="lazy"><figcaption>Eliges qué recursos crear. Todo se genera en tu equipo.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="agents" class="agents-section">
+    <div class="wrap">
+      <span class="kicker">Selecciona tu equipo</span>
+      <h2>Conoce a los <span class="glow-text">agents</span>.</h2>
+      <p class="sub">Cuatro cursores con una misión cada uno. Cuando aplicas el plan entran a tu timeline y lo construyen en vivo, clip por clip.</p>
+      <div class="roster">
+        <article class="agent" style="--c:#39FF88">
+          <header><span class="player">P1</span><svg class="cursor" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2l15 11.5-6.6 1.1 3.9 7.2-3 1.6-3.9-7.3L4 21z"/></svg></header>
+          <h3>Creator</h3>
+          <p class="role">Clase: constructor</p>
+          <p>Crea los clips, títulos, fondos y sonidos de cada escena.</p>
+          <dl class="stats"><dt>Especialidad</dt><dd>Crear</dd></dl>
+        </article>
+        <article class="agent" style="--c:#2DE2FF">
+          <header><span class="player">P2</span><svg class="cursor" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2l15 11.5-6.6 1.1 3.9 7.2-3 1.6-3.9-7.3L4 21z"/></svg></header>
+          <h3>Reader</h3>
+          <p class="role">Clase: explorador</p>
+          <p>Recorre tu proyecto y revisa cada escena antes de tocar algo.</p>
+          <dl class="stats"><dt>Especialidad</dt><dd>Leer</dd></dl>
+        </article>
+        <article class="agent" style="--c:#FFD23F">
+          <header><span class="player">P3</span><svg class="cursor" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2l15 11.5-6.6 1.1 3.9 7.2-3 1.6-3.9-7.3L4 21z"/></svg></header>
+          <h3>Updater</h3>
+          <p class="role">Clase: afinador</p>
+          <p>Ajusta tiempos, posiciones, efectos y transiciones hasta que todo encaja.</p>
+          <dl class="stats"><dt>Especialidad</dt><dd>Ajustar</dd></dl>
+        </article>
+        <article class="agent" style="--c:#FF3EA5">
+          <header><span class="player">P4</span><svg class="cursor" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2l15 11.5-6.6 1.1 3.9 7.2-3 1.6-3.9-7.3L4 21z"/></svg></header>
+          <h3>Deleter</h3>
+          <p class="role">Clase: limpiador</p>
+          <p>Quita lo que sobra para que el resultado quede limpio.</p>
+          <dl class="stats"><dt>Especialidad</dt><dd>Eliminar</dd></dl>
+        </article>
+      </div>
+      <p class="press-start">Listos para editar</p>
+      <img class="shot glow-frame wide" src="img/v2-agents-timeline.jpg" width="1600" height="900" alt="Los cuatro agents con sus colores neón trabajando sobre los clips del timeline" loading="lazy">
+    </div>
+  </section>
+
+  <section id="galeria" class="gallery-section">
+    <div class="wrap">
+      <span class="kicker">Hecho con IA en MinimalEditor</span>
+      <h2>Fondos animados, datos y subtítulos con palabras resaltadas.</h2>
+      <p class="sub">Escenas de dos videos de ejemplo hechos con IA local: «La historia de Microsoft» (arriba) y «Las abejas» (abajo). Los fondos animados, la música y la voz se generaron en la computadora.</p>
+      <div class="gallery">
+        <img src="img/v2-escena-inicios.jpg" width="1280" height="720" alt="Escena Los inicios (1975) con anillos de neón" loading="lazy">
+        <img src="img/v2-escena-software.jpg" width="1280" height="720" alt="Escena El software es clave con un sol retro y datos" loading="lazy">
+        <img src="img/v2-escena-1985.jpg" width="1280" height="720" alt="Escena con el dato 1985, la llegada de Windows" loading="lazy">
+        <img src="img/v2-escena-aurora.jpg" width="1280" height="720" alt="Escena con aurora boreal animada y subtítulo resaltado" loading="lazy">
+        <img src="img/v2-escena-rayos.jpg" width="1280" height="720" alt="Escena de cierre con rayos de luz dorados" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section id="ia" class="ai-section">
+    <div class="wrap">
+      <span class="kicker">Tu IA, a tu manera</span>
+      <h2>Úsala en local con Ollama o con tu propia API key.</h2>
+      <div class="facts">
+        <div class="fact"><strong>Local y gratis</strong><span>Con Ollama la IA corre en tu computadora: sin cuentas y sin pagar por uso. Después de descargar el modelo, funciona sin internet.</span></div>
+        <div class="fact"><strong>O en la nube</strong><span>Si prefieres, usa tu API key de Anthropic (Claude), OpenAI, Google Gemini, Mistral, Groq, OpenRouter, DeepSeek o xAI.</span></div>
+        <div class="fact"><strong>Tus videos no salen</strong><span>Solo se envía la estructura del proyecto, nunca tus archivos de video.</span></div>
+        <div class="fact"><strong>Es opcional</strong><span>Está desactivada hasta que la configuras. El editor funciona completo sin ella.</span></div>
+      </div>
+      <p class="warn-line">La IA puede cometer errores: verifica fechas y datos antes de publicar tu video.</p>
+    </div>
+  </section>
 
   <section id="funciones">
     <div class="wrap">
+      <span class="kicker">Y todo el editor</span>
       <h2>Todo lo que necesitas. Nada que estorbe.</h2>
       <p class="sub">Pensado para tareas de la escuela, exposiciones, videos del trabajo y recuerdos familiares. Lo aprendes en minutos, no en semanas.</p>
 
@@ -58,7 +156,7 @@
           <ul>
             <li>Más de 25 transiciones: fundidos, barridos, deslizamientos, iris y zoom.</li>
             <li>Animaciones de entrada, salida y énfasis con keyframes editables.</li>
-            <li>Zoom del timeline con la rueda o con el pellizco del trackpad.</li>
+            <li>Velocidad de 0.25× a 8× y reproducción en reversa.</li>
             <li>Fondos, formas, imagen en imagen y pantalla dividida listos para usar.</li>
           </ul>
         </div>
@@ -104,33 +202,19 @@
         </div>
         <img class="shot" src="img/06-audio.png" width="1920" height="1080" alt="Pestaña de audio con el mezclador por pista y el ecualizador del clip" loading="lazy">
       </div>
-
-      <div class="feature">
-        <div class="text">
-          <h3>Haz un video solo con describirlo</h3>
-          <p>Escribe «haz un video sobre la guerra de los pasteles» y la IA arma las escenas: fondos, títulos animados, textos y transiciones. También puede editar tus propios clips. Revisas el plan antes de aplicarlo y lo deshaces con un solo Ctrl+Z.</p>
-          <ul>
-            <li>Funciona con Anthropic (Claude), OpenAI, Google Gemini, Mistral, Groq, OpenRouter, DeepSeek, xAI u Ollama, que es gratis y corre en tu computadora.</li>
-            <li>Solo se envía la estructura del proyecto, nunca tus vídeos.</li>
-            <li>Es opcional y está desactivada hasta que la configuras.</li>
-          </ul>
-          <span class="cloud">Esta opción trabaja en la nube con tu API Key</span>
-        </div>
-        <img class="shot" src="img/05-editar-con-ia.png" width="1920" height="1080" alt="Ventana Editar con IA con una petición escrita y el plan de edición propuesto" loading="lazy">
-      </div>
     </div>
   </section>
 
-  <section id="precio">
+  <section id="precio" class="price-section">
     <div class="wrap">
-      <h2>Licencia de por vida: $149 MXN.</h2>
+      <h2>Licencia de por vida: <span class="glow-text">$149 MXN</span>.</h2>
       <p class="sub">Otros editores cobran mensualidades o más de mil pesos por una licencia de por vida. Aquí pagas una vez lo que cuesta una comida, y es tuyo para siempre.</p>
       <div class="facts">
         <div class="fact"><strong>Para siempre</strong><span>Lo compras una vez en Microsoft Store. Sin mensualidades ni renovaciones.</span></div>
         <div class="fact"><strong>Sin marca de agua</strong><span>Tus videos salen limpios desde el primer día. Nada de logos ajenos encima de tu trabajo.</span></div>
-        <div class="fact"><strong>Sin cargos ocultos</strong><span>Sin compras dentro de la app, sin funciones bloqueadas y sin marcas de agua.</span></div>
+        <div class="fact"><strong>Sin cargos ocultos</strong><span>Sin compras dentro de la app y sin funciones bloqueadas.</span></div>
         <div class="fact"><strong>Nadie te espía</strong><span>No guarda ni envía lo que haces, no te pide cuenta y no tiene anuncios.</span></div>
-        <div class="fact"><strong>Funciona en local</strong><span>No necesita conexión ni cuenta. Tus vídeos, música, fuentes e imágenes deben estar descargados en tu equipo.</span></div>
+        <div class="fact"><strong>Funciona en local</strong><span>No necesita conexión ni cuenta. La IA también puede correr en tu equipo con Ollama.</span></div>
       </div>
       <dl class="specs">
         <div><dt>Plataforma</dt><dd>Windows 10 y 11 (64 bits). Linux, próximamente.</dd></div>
@@ -139,7 +223,7 @@
         <div><dt>Formatos</dt><dd>Horizontal, vertical, cuadrado y 4K</dd></div>
       </dl>
       <div class="cta">
-        <a class="btn primary" href="https://apps.microsoft.com/detail/9P6VSP68VXM4?hl=es-mx&amp;gl=MX">
+        <a class="btn primary neon-btn" href="https://apps.microsoft.com/detail/9P6VSP68VXM4?hl=es-mx&amp;gl=MX">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5 10.4 4.5v7H3zm0 13 7.4 1v-7H3zm8.3 1.1L21 21v-8.5h-9.7zm0-15.2v7.1H21V3z"/></svg>
           Comprar en Microsoft Store
         </a>
